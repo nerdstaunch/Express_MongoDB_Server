@@ -24,5 +24,7 @@ module.exports = app => {
   // Create a new Tutorial
   router.delete("/", tutorials.deleteAll);
 
+  // This is the URL used to talk to this route
+  // http://localhost:8080/api/tutorials?tite=*title*
   app.use('/api/tutorials', router);
 };
